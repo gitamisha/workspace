@@ -1,0 +1,75 @@
+
+**************************************
+Sample JSON For Department Table :
+Url : http://localhost:8080/dpts
+1.
+{
+  "dptName" : "Administration"
+}
+2.
+{
+  "dptName" : "Delivery"
+}
+3.
+{
+  "dptName" : "Finance"
+}
+4.
+{
+  "dptName" : "Purchase"
+}
+5.
+{
+  "dptName" : "Support"
+}
+6.
+{
+  "dptName" : "Technical"
+}
+
+***************************************
+Sample JSON For Task Table :
+Url : http://localhost:8080/tasks
+1.
+{
+	"taskName": "Task1"
+}
+2.
+{
+	"taskName": "Task2"
+}
+
+****************************************
+Sample JSON For Employee Table :
+Url : http://localhost:8080/employees/{dptId}/employee
+1.
+{
+  "firstName": "Manoj",
+  "lastName": "Singh",
+  "email": "manoj@gmail.com",
+  "mobileNo": "9889888147",
+  "address": "Ahmedabad"
+}
+
+****************************************
+Url : http://localhost:8080/employees/{empId}/task
+((PUT)To attach task with employee)
+1.
+[
+	{
+		"taskId": 1,
+		"taskName": "Auditing"
+	},
+	{
+		"taskId": 2,
+		"taskName": “Managing"
+	}
+]
+
+2.
+[
+	{
+		"taskId": 1,
+		"taskName": "Auditing"
+	}
+]
